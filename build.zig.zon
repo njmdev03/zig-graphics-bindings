@@ -1,0 +1,34 @@
+.{
+    .name = .zig_graphics_bindings,
+
+    .version = "0.0.0",
+
+    .fingerprint = 0x8b6c2e079de56460, // Changing this has security and trust implications.
+
+    .minimum_zig_version = "0.17.0-dev.1936+5a625d5f3",
+
+    .dependencies = .{
+        .raylib_zig = .{
+            .url = "git+https://github.com/miker2049/raylib-zig/?ref=zig-17#b12e8b61e28781aebf9b6e15da20395f363aba8b",
+            .hash = "raylib_zig-6.0.0-KE8REOpkBQCc4dmLxXThcDMonoqldXEa_ALUDjdaEfFg",
+        }, .raylib = .{
+            .url = "git+https://github.com/miker2049/raylib?ref=zig-17#2039f928827c54db536d8e7cd201a9da55fa69e1",
+            .hash = "raylib-6.0.0-whq8uC93MAXS17kanWicN65EspW_qykGwkqsGt_nOvFh",
+        }, .rlImGui = .{
+            .url = "git+https://github.com/raylib-extras/rlImGui?ref=Raylib_6_0#3bc5731c4216bb8caa67fbea24aa85ce80d57ccb",
+            .hash = "N-V-__8AANm7iQDRWJckmwGIYtoZE_uQ2x-aPcwzL9ddTc4f",
+        }, .cimgui_zig = .{
+            .url = "git+https://github.com/tiawl/cimgui.zig#f6d6e0a7a68412bc7f2218ba8cf4adead3599360",
+            .hash = "cimgui_zig-1.0.0-2XubkqoFxgBZNJQ-SB6OhgbbVZR-jOTjjWIdFnqQKcfB",
+        },
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+
+        "LICENSE",
+        "README.md",
+    },
+}
