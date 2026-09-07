@@ -30,7 +30,6 @@ pub fn build(
     const rl_imgui_cpp = b.createModule(.{
         .target = target,
         .optimize = optimize,
-        .link_libc = true,
         .link_libcpp = true,
     });
 
