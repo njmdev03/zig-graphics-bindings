@@ -20,7 +20,16 @@
         }, .cimgui_zig = .{
             .url = "git+https://github.com/tiawl/cimgui.zig#f6d6e0a7a68412bc7f2218ba8cf4adead3599360",
             .hash = "cimgui_zig-1.0.0-2XubkqoFxgBZNJQ-SB6OhgbbVZR-jOTjjWIdFnqQKcfB",
-        },
+        }, .implot3d = .{
+            .url = "git+https://github.com/brenocq/implot3d#6cbefa9b976471f44deffa1571165454976fe994",
+            .hash = "N-V-__8AAHO6CADSHKVikoq2gxc5I_Taq-EEF54q6K1FhbSR",
+        }, .implot = .{
+            .url = "git+https://github.com/epezent/implot#7eeb9168d2e5e6b14e266d8782ecf7e649dfc3a4",
+            .hash = "N-V-__8AAC6cCwDxHkT7bHMxbcEAeg5hL6G65AhrDmHIni-l",
+        }, .imguizmo = .{
+            .url = "git+https://github.com/CedricGuillemet/ImGuizmo#18cef5e031d8c6973d80284c67f60549fafd78c1",
+            .hash = "N-V-__8AACiOeAAi7PoXDov-pktAKGjXxIhT65hITpXroS_3",
+        }
     },
 
     .paths = .{
