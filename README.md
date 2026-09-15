@@ -101,3 +101,25 @@ b.installArtifact(exe);
 ## Contributing
 
 You are welcome to open issues if anything seems off or to discuss changes, or open a pull request with reasonable fixes or changes.
+
+## TODO
+
+### Cimgui
+
+- [ ] DragFloat
+- [ ] DragInt
+- [ ] SliderFloat
+- [ ] SliderInt
+- [ ] SliderAngle
+- [ ] InputText
+- InputTextWithHint
+- [ ] InputInt
+- [ ] InputFloat
+- [ ] InputDouble
+- [ ] InputFloat2
+- [ ] InputFloat3
+- [ ] InputFloat4
+- [ ] ColorEdit3
+- [ ] ColorEdit4
+- [ ] Combo
+- ListBox
