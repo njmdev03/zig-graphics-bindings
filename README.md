@@ -100,7 +100,9 @@ b.installArtifact(exe);
 
 ## Contributing
 
-You are welcome to open issues if anything seems off or to discuss changes, or open a pull request with reasonable fixes or changes.
+You are welcome to open issues if anything seems off or to discuss changes.
+
+If you are able to make contributions, open a pull request.
 
 ## TODO
 
