@@ -16,7 +16,6 @@ pub fn build(b: *std.Build) void {
         b.path("src/cimgui"),
         target,
         optimize,
-        .{ .docking = false }
     );
 
     _ = rl_imgui.build(

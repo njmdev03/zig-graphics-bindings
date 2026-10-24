@@ -7,24 +7,17 @@ pub const Output = struct {
     library: *std.Build.Step.Compile
 };
 
-pub const CimguiOptions = struct {
-    docking: bool,
-};
-
 pub fn build(
     b: *std.Build,
     p: std.Build.LazyPath,
     target: std.Build.ResolvedTarget,
     optimize: std.builtin.Optimize,
-    options: CimguiOptions,
 ) Output {
     const cimgui_zig_dep = b.dependency("cimgui_zig", .{
         .target = target,
         .optimize = optimize,
         .no_platform = true,
         .no_renderer = true,
-
-        .docking = options.docking,
 
         .link_libc = true,
     });
@@ -41,11 +34,11 @@ pub fn build(
 
     var cimgui_zig_include: std.Build.LazyPath = cimgui_zig_dep.path("dcimgui/master");
 
-    if (options.docking) {
-        cimgui_zig_include = cimgui_zig_dep.path("dcimgui/docking");
-    } else {
+    // if (options.docking) {
+    //     cimgui_zig_include = cimgui_zig_dep.path("dcimgui/docking");
+    // } else {
         cimgui_zig_include = cimgui_zig_dep.path("dcimgui/master");
-    }
+    // }
 
     return .{
         .include_path = cimgui_zig_include,

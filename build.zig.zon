@@ -5,31 +5,30 @@
 
     .fingerprint = 0x8b6c2e079de56460, // Changing this has security and trust implications.
 
-    .minimum_zig_version = "0.17.0-dev.1936+5a625d5f3",
+    .minimum_zig_version = "0.17.0",
 
-    .dependencies = .{
-        .raylib_zig = .{
-            .url = "git+https://github.com/miker2049/raylib-zig/?ref=zig-17#b12e8b61e28781aebf9b6e15da20395f363aba8b",
-            .hash = "raylib_zig-6.0.0-KE8REOpkBQCc4dmLxXThcDMonoqldXEa_ALUDjdaEfFg",
-        }, .raylib = .{
-            .url = "git+https://github.com/miker2049/raylib?ref=zig-17#2039f928827c54db536d8e7cd201a9da55fa69e1",
-            .hash = "raylib-6.0.0-whq8uC93MAXS17kanWicN65EspW_qykGwkqsGt_nOvFh",
-        }, .rlImGui = .{
-            .url = "git+https://github.com/raylib-extras/rlImGui?ref=Raylib_6_0#3bc5731c4216bb8caa67fbea24aa85ce80d57ccb",
-            .hash = "N-V-__8AANm7iQDRWJckmwGIYtoZE_uQ2x-aPcwzL9ddTc4f",
-        }, .cimgui_zig = .{
-            .url = "git+https://github.com/tiawl/cimgui.zig#f6d6e0a7a68412bc7f2218ba8cf4adead3599360",
-            .hash = "cimgui_zig-1.0.0-2XubkqoFxgBZNJQ-SB6OhgbbVZR-jOTjjWIdFnqQKcfB",
-        }, .implot3d = .{
-            .url = "git+https://github.com/brenocq/implot3d#6cbefa9b976471f44deffa1571165454976fe994",
-            .hash = "N-V-__8AAHO6CADSHKVikoq2gxc5I_Taq-EEF54q6K1FhbSR",
-        }, .implot = .{
-            .url = "git+https://github.com/epezent/implot#7eeb9168d2e5e6b14e266d8782ecf7e649dfc3a4",
-            .hash = "N-V-__8AAC6cCwDxHkT7bHMxbcEAeg5hL6G65AhrDmHIni-l",
-        }, .imguizmo = .{
-            .url = "git+https://github.com/CedricGuillemet/ImGuizmo#18cef5e031d8c6973d80284c67f60549fafd78c1",
-            .hash = "N-V-__8AACiOeAAi7PoXDov-pktAKGjXxIhT65hITpXroS_3",
-        }
+    .dependencies = .{ .raylib_zig = .{
+        .url = "git+https://github.com/raylib-zig/raylib-zig?ref=devel#28bbe30112f605da918db00eff53a75ce1aa9180",
+        .hash = "raylib_zig-6.2.0-KE8RELGmBQDX1v1DqBN57pNxJ-b-MIa1S-M7NXT9Eplr",
+    }, .rlImGui = .{
+        .url = "git+https://github.com/raylib-extras/rlImGui#1550009359ad975927f7f0e4a3f47e3f27123ea9",
+        .hash = "N-V-__8AANm7iQDRWJckmwGIYtoZE_uQ2x-aPcwzL9ddTc4f",
+    }, .cimgui_zig = .{
+        .url = "git+https://github.com/tiawl/cimgui.zig#f431ba12995bee154d6905e841edfbdf5fec6b8a",
+        .hash = "cimgui_zig-1.0.0-2XubkloxzABDSer0ti13mQYVWPlXF7sgvoe1rpOI2p2S",
+    }, .implot3d = .{
+        .url = "git+https://github.com/brenocq/implot3d#ae36ffcf069ea49b763b1439fdbf403fe49270e9",
+        .hash = "N-V-__8AAHO6CADSHKVikoq2gxc5I_Taq-EEF54q6K1FhbSR",
+    }, .implot = .{
+        .url = "git+https://github.com/epezent/implot#851cdbdd60d1dfb64c23e987969694de0f547a6b",
+        .hash = "N-V-__8AAC6cCwDxHkT7bHMxbcEAeg5hL6G65AhrDmHIni-l",
+    }, .imguizmo = .{
+        .url = "git+https://github.com/CedricGuillemet/ImGuizmo#105e4fde45e4e74aae8973d98750820ef7aca7e2",
+        .hash = "N-V-__8AACiOeAAi7PoXDov-pktAKGjXxIhT65hITpXroS_3",
+    }, .raylib = .{
+            .url = "git+https://github.com/raysan5/raylib#48f352c96668369787b47e1bca9f3b78bf2650f1",
+            .hash = "raylib-6.0.0-whq8uDh4OAWBdL51d8P_N1122HAU26tZWr6tlrV_lh20",
+        },
     },
 
     .paths = .{
