@@ -95,10 +95,6 @@ pub const ImGuiColorEditFlags = enum (i32) {
     PickerMask_      = 1<<26 | 1<<25,
     InputMask_       = 1<<28 | 1<<29,
 
-    // Obsolete names
-    AlphaPreview     = 0,      // Removed in 1.91.8. This is the default now. Will display a checkerboard unless ImGuiColorEditFlags_AlphaNoBg is set.
-    //ImGuiColorEditFlags_RGB = ImGuiColorEditFlags_DisplayRGB, ImGuiColorEditFlags_HSV = ImGuiColorEditFlags_DisplayHSV, ImGuiColorEditFlags_HEX = ImGuiColorEditFlags_DisplayHex  // [renamed in 1.69]
-
     _,
 };
 
@@ -251,9 +247,14 @@ pub fn sliderAngle(label: TerminatedString, v: *f32) bool {
     return ImGui_SliderAngle(label, v);
 }
 
+pub fn sliderAngleEx(label: TerminatedString, v_rad: *f32, v_degrees_min: f32, v_degrees_max: f32, format: TerminatedString, flags: c_int) bool {
+    return ImGui_SliderAngleEx(label, v_rad, v_degrees_min, v_degrees_max, format, flags);
+}
+
 extern fn ImGui_SliderFloat(label: TerminatedString, v: *f32, v_min: f32, v_max: f32) bool;
 extern fn ImGui_SliderInt(label: TerminatedString, v: *i32, v_min: i32, v_max: i32) bool;
 extern fn ImGui_SliderAngle(label: TerminatedString, v_rad: *f32) bool;
+extern fn ImGui_SliderAngleEx(label: TerminatedString, v_rad: *f32, v_degrees_min: f32, v_degrees_max: f32, format: TerminatedString, flags: c_int) bool;
 
 pub fn inputFloat(label: TerminatedString, v: *f32) bool {
     return ImGui_InputFloat(label, v);
